@@ -16,8 +16,7 @@ Seçtiğiniz film koltuk(ların) sayısına göre toplam ücret ekrana yansır.
 ![](images/screen1.png)
 ![](images/screen2.png)
 ![](images/screen3.png)
-![](images/cinema.gif)
 
 <h5> GIF </h5>
 
-![](assets/images/form.gif)
+![](images/cinema.gif)
