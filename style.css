@@ -1,0 +1,143 @@
+:root {
+    /* RENKLER */
+    --background-color: #242424;
+    --seat-color: #626266;
+    --text-color: #777;
+    --reserve-color: #fff;
+    --selected-color: #f6eb6f;
+    --info-background: rgba(0, 0, 0, 0.2);
+
+    /* ANİMASYON */
+    --transition: all 0.5s ease;
+
+    /* BOX-SHADOW */
+    --box-shadow: 0 3px 8px rgba(255, 255, 255, 0.932);
+}
+
+/* DEĞER SIFIRLAMASI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+body h3{
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.screen {
+    margin: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+/* Perde */
+
+.screen img {
+    width: 300px;
+    height: 175px;
+}
+
+/* Koltuk Sıralaması */
+
+.seatRow {
+    display: flex;
+}
+
+.seat {
+    color: var(--seat-color);
+    font-size: 25px;
+    margin: 5px;
+    transition: var(--transition);
+}
+
+.seat.selected {
+    color: var(--selected-color);
+}
+
+.seat.reserved {
+    color: var(--reserve-color);
+}
+
+.seat:not(.reserved):hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Film Seçimi */
+.movie-list {
+    margin: 20px 0;
+}
+
+.movie-list h4{
+    color: rgb(221, 76, 23);
+    display: flex;
+    justify-content: center;
+    margin: 8px;
+}
+
+#movie {
+    min-width: 100px;
+}
+
+#hour{
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.hour-select h4{
+    color: rgb(221, 76, 23);
+    margin: 8px;
+}
+
+/* Koltuk Renk Bilgileri */
+
+.info {
+    background-color: var(--info-background);
+    display: flex;
+    padding: 5px 15px;
+    color: var(--text-color);
+    gap: 20px;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.infoText {
+    color: var(--reserve-color);
+    margin: 15px;
+    transition: var(--transition);
+    display: none;
+}
+
+.infoText.open {
+    display: block;
+}
+
+.infoText span {
+    color: var(--selected-color);
+}
