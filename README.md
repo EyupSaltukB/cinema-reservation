@@ -1,9 +1,9 @@
 <h1> Sinema Rezervasyon </h1>
 
 Sinema rezervasyon ekranı.
-Koltuk ve saat seçebilirsiniz.
+Bu projede koltuk ve saat seçebilirsiniz.
 Rezerve, seçili ve boş koltukları görüntüleyebilirsiniz. 
-Seçtiğiniz film koltuk(ların) sayısına göre toplam ücret ekrana yansır.
+Seçtiğiniz film koltuk(ların) sayısına göre toplam ücret ekrana yansıtılır.
 
 -------------------------------
 
